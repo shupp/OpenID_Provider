@@ -45,8 +45,8 @@ class OpenID_Provider
            $this->processAssociate();
         case 'checkid_setup':
            $this->processCheckIDSetup();
-        case 'checkid_authenticate':
-           $this->processCheckIDAuthenticate();
+        case 'checkid_immediate':
+           $this->processCheckIDImmediate();
         default:
             throw new OpenID_Provider_Exception(
                 'Invalid mode'
